@@ -25,21 +25,14 @@ $ composer require xueyuan/ocr -vvv
     ```
     
 2. laravel
+
     > 1. ServicePrivider 参考laravel容器
-    
-    ```
         $ocr = app(\Xueyuan\Ocr\Ocr::class)->make('idcard');
         return $ocr->recognition(0,'application/json',['http://i3.qhimg.com/t0148d78bd495777810.jpg']);
-    ```
-    
     > 2. Facade  参考laravel 门面
-    
-        ```
         use Xueyuan\Ocr\Facades\Ocr;
         $ocr = Ocr::make('idcard');
         return $ocr->recognition(0,'application/json',['http://i3.qhimg.com/t0148d78bd495777810.jpg']);
-        ```
-
 ## Contributing
 
 You can contribute in one of three ways:
