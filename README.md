@@ -8,9 +8,13 @@
 ```shell
 $ composer require xueyuan/ocr -vvv
 ```
-
+## config
+ 1.在使用本扩展之前，你需要去 腾讯云 注册账号，然后创建应用，获取应用的 appid,secret_id,secret_key,bucket。
+ 2.仔细阅读腾讯ocr api https://cloud.tencent.com/document/api/866/17594 
+ 
 ## Usage
 
+此扩展包依赖于 guzzlehttp/guzzle 
 1. 普通安装
     直接初始化
     ```
