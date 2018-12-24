@@ -17,24 +17,27 @@ $ composer require xueyuan/ocr -vvv
 此扩展包依赖于 guzzlehttp/guzzle 
 1. 普通安装
     直接初始化
+    
     ```
     $factory = new Factory(["appid"=>'','secret_id'=>'','secret_key'=>'','bucket'=>'']);
     // 支持的类型有idcard businesscard drivinglicence plate bankcard bizlicense general handwriting
     $result = $factory->make('idcard'); 
-    
     ```
+    
 2. laravel
     > 1. ServicePrivider 参考laravel容器
+    
     ```
         $ocr = app(\Xueyuan\Ocr\Ocr::class)->make('idcard');
         return $ocr->recognition(0,'application/json',['http://i3.qhimg.com/t0148d78bd495777810.jpg']);
     ```
+    
     > 2. Facade  参考laravel 门面
+    
         ```
         use Xueyuan\Ocr\Facades\Ocr;
         $ocr = Ocr::make('idcard');
         return $ocr->recognition(0,'application/json',['http://i3.qhimg.com/t0148d78bd495777810.jpg']);
-        
         ```
 
 ## Contributing
