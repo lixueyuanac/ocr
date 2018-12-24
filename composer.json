@@ -1,0 +1,29 @@
+{
+    "name": "xueyuan\/ocr",
+    "description": "Tencent Ocr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lixueyuan",
+            "email": "654530249@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xueyuan\\Ocr\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xueyuan\\Ocr\\ServiceProvider"
+            ],
+            "aliases": {
+                "Ocr": "Xueyuan\\Ocr\\Facade\\Ocr"
+            }
+        }
+    }
+}
