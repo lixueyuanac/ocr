@@ -34,8 +34,10 @@ $ composer require xueyuan/ocr -vvv
       ```
     
       > 2. Facade  参考laravel 门面
+      ```
         use Xueyuan\Ocr\Facades\Ocr;
         $ocr = Ocr::make('idcard');
+      ```
 
     
 ## Contributing
